@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[City]
+(
+[CityID] [int] NOT NULL,
+[CityName] [varchar] (255) COLLATE Latin1_General_CI_AI NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[City] ADD CONSTRAINT [PK_City] PRIMARY KEY CLUSTERED  ([CityID]) ON [PRIMARY]
+GO
